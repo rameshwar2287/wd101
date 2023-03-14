@@ -1,0 +1,79 @@
+<style>
+    #form-box{
+        background-color: rgba(229, 163, 163, 0.844);
+        width: 500px;
+        margin: auto;
+        border: 1px solid black;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    #form div{
+        margin-left: 20px;
+    }
+    input{
+        width: 90%;
+        padding: 3px 20px;
+        font-weight: bold;
+    }
+    #tc{
+        width: 2%;
+    }
+    #tbl{
+        background-color: aqua;
+        width: 900px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+    table,th,td{
+        border: 2px solid black;
+        border-style: groove;
+    }
+</style>
+<body>
+    <div id="form-box">
+        <center>
+            <h1 style="color: rgb(9, 17, 162);">Registration Form </h1>
+        </center>
+        <form id="form">
+            <div id="username" class="inputs">
+                <label for="name">Name</label><br>
+                <input type="text" required id="name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div id="emailid" class="inputs">
+                <label for="email">Email Id</label><br>
+                <input type="email" required id="email" name="email" placeholder="Enter Email" required />
+            </div>
+            <div id="passwd" class="inputs">
+                <label for="password">Password</label><br>
+                <input type="password" required id="password" name="password" placeholder="Enter Password" required />
+            </div>
+            <div id="dateofbirth" class="inputs">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" name="dob" type="date" required />
+            </div>
+            <div id="agree">
+                <input id="tc" type="checkbox" required > I have read and agree to the terms and conditions.</input>
+            </div>
+            <br>
+
+            <center><button id="submit" type="submit"
+                    style="padding: 6px; font-weight: bold; border-radius: 4px;">Submit</button></center>
+        </form>
+    </div><br>
+    <div id="tbl">
+        <center>
+            <h1 style="color: blue;">Entries</h1>
+        </center>
+        <table id="usertbl">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Date of Birth</th>
+                <th>Accepted terms?</th>
+        </table>
+    </div>
+<script src="index.js"></script>
+    
+</body>
